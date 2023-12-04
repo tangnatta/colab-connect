@@ -70,3 +70,18 @@ def colabconnect() -> None:
 
     print("Starting the tunnel")
     start_tunnel()
+
+def colabconnect_wo_drive() -> None:
+    print("Installing python libraries...")
+    run("pip3 install --user flake8 black ipywidgets twine")
+    run("pip3 install -U ipykernel")
+    run("apt install htop -y")
+
+    print("Installing vscode-cli...")
+    run(
+        "curl -Lk https://code.visualstudio.com/sha/download?build=stable&os=cli-alpine-x64 --output vscode_cli.tar.gz"
+    )
+    run("tar -xf vscode_cli.tar.gz")
+
+    print("Starting the tunnel")
+    start_tunnel()
