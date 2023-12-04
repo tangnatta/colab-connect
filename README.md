@@ -9,18 +9,24 @@ https://user-images.githubusercontent.com/8587189/232783372-8f2a5f83-1e57-42f0-8
 ## Disclaimer
 Please use the tool at your own risk as it might break Google Colab's [TOS](https://research.google.com/colaboratory/faq.html#limitations-and-restrictions) and can get your account limited / banned.
 
-## Usage
+## Usage [ORGINAL]
 You can make a copy of this [notebook](https://colab.research.google.com/drive/1VAlrgB4IpBazkQRrZtSPjeTNR3P27FwQ?usp=sharing) to get started.
 
 On Google Colab, first install the library and the run the code.
 ```shell
-!pip install -U git+https://github.com/amitness/colab-connect.git
+!pip install -U git+https://github.com/tangnatta/colab-connect.git
 ```
 
 ```python
 from colabconnect import colabconnect
 
 colabconnect()
+```
+
+```python
+from colabconnect import colabconnect_wo_drive
+
+colabconnect_wo_drive()
 ```
 
 1. After running the code, copy the given code, click the GitHub link and paste the code.
